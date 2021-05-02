@@ -57,10 +57,10 @@ html, body {
 
 /* Quiz Section */
 #quiz {
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
-    height: 100vh;
-    padding-top: 10vh;
+    padding: 10vh 0;
 }
 #quiz h2 {
     font-weight: 800;
@@ -104,6 +104,7 @@ html, body {
 #quiz h4 {
     margin-top: 3vh;
     font-weight: 600;
+    cursor: pointer;
 }
 #quiz h4[onclick="next()"] {
     color: #BBB;
@@ -127,6 +128,19 @@ html, body {
     right: -25vh;
     top: -5vh;
     transform: rotate(180deg);
+}
+#quiz #prediction h3 {
+    margin-top: 5vh;
+}
+#quiz #prediction h4 {
+    margin-top: 0;
+    cursor: auto;
+}
+#quiz #prediction p {
+    margin-top: 4vh;
+    font-size: 1.5vh;
+    color: red;
+    display: none;
 }
 
 /* Help Section */
